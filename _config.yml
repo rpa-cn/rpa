@@ -5,14 +5,14 @@
 # Site
 title: RPA
 subtitle:
-description: "The Robotic Process Automation"
-author: wanghaisheng
+description: "The Robotic process automation"
+author: Evan You
 email:
 language:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://rpa-cn.github.io/rpa
+url: https://rpacn.org
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
@@ -138,9 +138,7 @@ offline:
 ## Docs: http://zespia.tw/hexo/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/rpa-cn/rpa.git
-  name: wanghaisheng
-  email: edwin_uestc@163.com
+  repository: git@github.com:rpa-cn/rpa.git
 
 feed:
   type: atom
