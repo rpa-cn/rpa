@@ -138,7 +138,7 @@ offline:
 ## Docs: http://zespia.tw/hexo/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/rpa-cn/rpa
+  repository: git@github.com:rpa-cn/rpa.git
   name: wanghaisheng
   email: edwin_uestc@163.com
 
