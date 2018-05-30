@@ -1,0 +1,141 @@
+<div class="sidebar">
+  <div class="sidebar-inner-index">
+    <ul class="main-menu">
+      <%- partial('partials/main_menu', { context: 'sidebar' }) %>
+    </ul>
+  </div>
+</div>
+
+<div id="hero">
+  <div class="inner">
+    <div class="left">
+      <img class="hero-logo" src="<%- url_for("/images/Risks Presented in Adopting RPA .jpg") %>">
+    </div><div class="right">
+      <h2 class="vue">RPA</h2>
+      <h1>
+        The Robotic<br>Process Automation
+      </h1>
+      <p>
+        <a id="modal-player" class="button has-icon" href="javascript:;">
+          <%- partial('icons/play') %>
+          WHY RPA?</a>
+        <a class="button white" href="<%- url_for("/v2/guide/") %>">入门</a>
+        <a class="button gray has-icon" href="https://github.com/rpa-cn/rpa" target="_blank">
+          <%- partial('icons/github-dark') %>
+          GITHUB</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- 暂无
+
+<div id="special-sponsor">
+  <h3>Special Sponsors</h3>
+  <br>
+  <a href="https://stdlib.com/" target="_blank">
+    <img src="/images/stdlib.png" style="width:140px">
+    <span>Function as a Service Platform and Library</span>
+  </a>
+  <br>
+  <a href="https://www.bitsrc.io/?utm_source=vue&utm_medium=vue&utm_campaign=vue&utm_term=vue&utm_content=vue" target="_blank">
+    <img src="/images/bit.png" style="width:60px;height:60px">
+    <span>The fastest way to share code</span>
+  </a>
+
+</div>
+
+
+-->
+
+<div id="highlights">
+  <div class="inner">
+    <div class="point">
+      <h2>特点</h2>
+      <p>通过用户界面（UI）或者脚本语言（Script）实现自动化处理；</br>
+        流程必须有明确的、可被数字化的触发指令和输入；</br>
+      模拟用户手工操作及交互,例如：鼠标点击、键盘输入、复制/粘贴等一系列日常电脑操作。</p>
+    </div>
+
+    <div class="point">
+      <h2>一般优势</h2>
+      <p>7*24小时</br>
+      操作精准、品质高</br>
+      有助于企业的人力资源释放到更高价值工作上</br>
+      基于明确的规则操作，无差别化，尽可能消除人的因素
+      </p>
+    </div>
+
+    <div class="point">
+      <h2>拓展优势</h2>
+      <p>
+        非侵入式，不影响原有IT基础架构；</br>
+        每个步骤可记录可审计<br>
+        部分合规和审计工作可全面实行<br>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="sponsors">
+  <div class="inner">
+    <%- partial('partials/sponsors') %>
+  </div>
+</div>
+
+<div id="footer">
+  <p>
+    <a class="social-icon" href="https://github.com/orgs/rpa-cn/dashboard" target="_blank">
+      <%- partial('icons/github') %>
+    </a>
+    <a class="social-icon" href="https://weibo.com/p/2304914240715636861725" target="_blank">
+      <%- partial('icons/weibo') %>
+    </a>
+    <a class="social-icon" href="https://www.zhihu.com/search?type=content&q=rpa" target="_blank">
+      <%- partial('icons/zhihu') %>
+    </a>
+  </p>
+  <p>Released under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a><br>
+  Copyright &copy; 2014-<%- new Date().getFullYear() %> Wanghaisheng</p>
+</div>
+            <%- partial('partials/ad') %>
+
+<div id="video-modal" class="modal">
+  <div class="video-space" style="padding: 56.25% 0 0 0; position: relative;"><iframe src="https://player.vimeo.com/video/247494684" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
+
+
+
+<script>
+(function () {
+  var topScrolled = false
+  var sponsors = document.getElementById('sponsors')
+  var sponsorTop = sponsors.offsetTop
+  var sponsorActive = false
+
+  window.addEventListener('resize', function () {
+    sponsorTop = sponsors.offsetTop
+  })
+
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 165 && !topScrolled) {
+      topScrolled = true
+      document.getElementById('mobile-bar').classList.remove('top')
+    } else if (window.pageYOffset <= 165 && topScrolled) {
+      topScrolled = false
+      document.getElementById('mobile-bar').classList.add('top')
+    }
+    if (window.pageYOffset > sponsorTop - 100) {
+      if (!sponsorActive) {
+        sponsorActive = true
+        sponsors.classList.add('active')
+      }
+    } else {
+      if (sponsorActive) {
+        sponsorActive = false
+        sponsors.classList.remove('active')
+      }
+    }
+  })
+})()
+</script>
