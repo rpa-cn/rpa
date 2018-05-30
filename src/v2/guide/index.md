@@ -1,388 +1,173 @@
 ---
-title: Introduction
+title: 简介
 type: guide
 order: 805
 ---
 
 ## RPA  是什么?
 
-Vue (pronounced /vjuː/, like **view**) is a **progressive framework** for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with [modern tooling](single-file-components.html) and [supporting libraries](https://github.com/vuejs/awesome-vue#components--libraries).
 
-If you’d like to learn more about Vue before diving in, we <a id="modal-player"  href="#">created a video</a> walking through the core principles and a sample project.
 
-If you are an experienced frontend developer and want to know how Vue compares to other libraries/frameworks, check out the [Comparison with Other Frameworks](comparison.html).
 
-## Getting Started
+RPA is an application of technology aimed at automating business processes. Using RPA tools, a company can configure software, or a “robot,” to capture and interpret applications for processing a transaction, manipulating data, triggering responses and communicating with other digital systems, according to the Institute for Robotic Process Automation and Artificial Intelligence.
 
-<p class="tip">The official guide assumes intermediate level knowledge of HTML, CSS, and JavaScript. If you are totally new to frontend development, it might not be the best idea to jump right into a framework as your first step - grasp the basics then come back! Prior experience with other frameworks helps, but is not required.</p>
+Inclusion of the term "automation" may cause some to confuse RPA with ML and AI. RPA can include ML or AI, but it is governed by set business logic and structured inputs, and its rules don't deviate, whereas ML and AI technologies can be trained to make judgments about unstructured inputs.
 
-The easiest way to try out Vue.js is using the [JSFiddle Hello World example](https://jsfiddle.net/chrisvfritz/50wL7mdz/). Feel free to open it in another tab and follow along as we go through some basic examples. Or, you can <a href="https://gist.githubusercontent.com/chrisvfritz/7f8d7d63000b48493c336e48b3db3e52/raw/ed60c4e5d5c6fec48b0921edaed0cb60be30e87c/index.html" target="_blank" download="index.html">create an <code>index.html</code> file</a> and include Vue with:
+RPA scenarios span a wide spectrum, ranging from something as simple as generating an automatic response to an email to deploying thousands of bots, each programmed to complete a specific task, to automate jobs in an ERP system. Insurers use RPA to pipe policy management data into a claims processing application, rather than having humans type them in from their computers.
 
-``` html
-<!-- development version, includes helpful console warnings -->
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-```
+Enterprises are looking to RPA to automate legacy business processes because their talent, technology and time resources are constrained, Dave Kuder, a principal with Deloitte Consulting LLP, tells CIO.com. With RPA, CIOs can complete in days or weeks manual processes that previously took months or years, and at a fraction of the cost. "You can imagine why this is gaining a ton of traction right now," Kuder says.
 
-or:
+The RPA market is small but growing. Spending on RPA software will reach $1 billion by 2020, Gartner says, growing at a compound annual growth rate of 41 percent from 2015 through 2020. By that time, 40 percent of large enterprises will have adopted an RPA software tool, up from less than 10 percent today. For many organizations, RPA may prove to be a stop-gap on their way to AI.
 
-``` html
-<!-- production version, optimized for size and speed -->
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-```
 
-The [Installation](installation.html) page provides more options of installing Vue. Note: We **do not** recommend that beginners start with `vue-cli`, especially if you are not yet familiar with Node.js-based build tools.
 
-## Declarative Rendering
+## RPA 能干什么
 
-At the core of Vue.js is a system that enables us to declaratively render data to the DOM using straightforward template syntax:
 
-``` html
-<div id="app">
-  {{ message }}
-</div>
-```
-``` js
-var app = new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Vue!'
-  }
-})
-```
-{% raw %}
-<div id="app" class="demo">
-  {{ message }}
-</div>
-<script>
-var app = new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Vue!'
-  }
-})
-</script>
-{% endraw %}
 
-We have already created our very first Vue app! This looks pretty similar to rendering a string template, but Vue has done a lot of work under the hood. The data and the DOM are now linked, and everything is now **reactive**. How do we know? Open your browser's JavaScript console (right now, on this page) and set `app.message` to a different value. You should see the rendered example above update accordingly.
 
-In addition to text interpolation, we can also bind element attributes like this:
+Using RPA tools, a company can configure software, or a “robot,” to capture and interpret applications for processing a transaction, manipulating data, triggering responses and communicating with other digital systems, according to the Institute for Robotic Process Automation and Artificial Intelligence.Nov 13, 2017
 
-``` html
-<div id="app-2">
-  <span v-bind:title="message">
-    Hover your mouse over me for a few seconds
-    to see my dynamically bound title!
-  </span>
-</div>
-```
-``` js
-var app2 = new Vue({
-  el: '#app-2',
-  data: {
-    message: 'You loaded this page on ' + new Date().toLocaleString()
-  }
-})
-```
-{% raw %}
-<div id="app-2" class="demo">
-  <span v-bind:title="message">
-    Hover your mouse over me for a few seconds to see my dynamically bound title!
-  </span>
-</div>
-<script>
-var app2 = new Vue({
-  el: '#app-2',
-  data: {
-    message: 'You loaded this page on ' + new Date().toLocaleString()
-  }
-})
-</script>
-{% endraw %}
+![](https://user-images.githubusercontent.com/2363295/40136692-0da0c2e4-597b-11e8-9f22-ea0a0324e55b.jpg)
 
-Here we are encountering something new. The `v-bind` attribute you are seeing is called a **directive**. Directives are prefixed with `v-` to indicate that they are special attributes provided by Vue, and as you may have guessed, they apply special reactive behavior to the rendered DOM. Here, it is basically saying "keep this element's `title` attribute up-to-date with the `message` property on the Vue instance."
 
-If you open up your JavaScript console again and enter `app2.message = 'some new message'`, you'll once again see that the bound HTML - in this case the `title` attribute - has been updated.
+More CIOs are turning to an emerging technology practice called robotic process automation (RPA) to streamline enterprise operations and reduce costs. With RPA, businesses can automate mundane rules-based business processes, enabling business users to devote more time to higher-value tasks. Others see RPA fitting into a larger context, as they take a more deliberate path to adoption, seeking to understand RPA's potential to work alongside machine learning (ML) and artificial intelligence (AI) tools.
 
-## Conditionals and Loops
+Here CIO.com takes a look at what robotic process automation really is, and how CIOs can make the most of RPA in alignment with business goals.
 
-It's easy to toggle the presence of an element, too:
 
-``` html
-<div id="app-3">
-  <span v-if="seen">Now you see me</span>
-</div>
-```
+## RPA 的用途
 
-``` js
-var app3 = new Vue({
-  el: '#app-3',
-  data: {
-    seen: true
-  }
-})
-```
+Robotic process automation (RPA) is the application of technology that allows employees in a company to configure computer software or a “robot” to capture and interpret existing applications for processing a transaction, manipulating data, triggering responses and communicating with other digital systems.Feb 22, 2017
 
-{% raw %}
-<div id="app-3" class="demo">
-  <span v-if="seen">Now you see me</span>
-</div>
-<script>
-var app3 = new Vue({
-  el: '#app-3',
-  data: {
-    seen: true
-  }
-})
-</script>
-{% endraw %}
+A lot has been written about Robotic Process Automation (RPA) and organizations are starting to understand what it is, what value it can deliver and to some extent also how to apply it in their organizations.
 
-Go ahead and enter `app3.seen = false` in the console. You should see the message disappear.
+Robotic process automation (RPA) is the application of technology that allows employees in a company to configure computer software or a “robot” to capture and interpret existing applications for processing a transaction, manipulating data, triggering responses and communicating with other digital systems.
 
-This example demonstrates that we can bind data to not only text and attributes, but also the **structure** of the DOM. Moreover, Vue also provides a powerful transition effect system that can automatically apply [transition effects](transitions.html) when elements are inserted/updated/removed by Vue.
+Any company that uses labor on a large scale for general knowledge process work, where people are performing high-volume, rules driven, highly transactional process functions, will boost their capabilities and save money and time with robotic process automation software.
 
-There are quite a few other directives, each with its own special functionality. For example, the `v-for` directive can be used for displaying a list of items using the data from an Array:
+Just as industrial robots are remaking the manufacturing industry by creating higher production rates and improved quality, RPA “software robots” are revolutionizing the way we think about and administer business processes, IT support processes, workflow processes, remote infrastructure and back-office work. RPA provides dramatic improvements in accuracy and cycle time and increased productivity in transaction processing while it elevates the nature of work by removing people from dull, repetitive tasks.
 
-``` html
-<div id="app-4">
-  <ol>
-    <li v-for="todo in todos">
-      {{ todo.text }}
-    </li>
-  </ol>
-</div>
-```
-``` js
-var app4 = new Vue({
-  el: '#app-4',
-  data: {
-    todos: [
-      { text: 'Learn JavaScript' },
-      { text: 'Learn Vue' },
-      { text: 'Build something awesome' }
-    ]
-  }
-})
-```
-{% raw %}
-<div id="app-4" class="demo">
-  <ol>
-    <li v-for="todo in todos">
-      {{ todo.text }}
-    </li>
-  </ol>
-</div>
-<script>
-var app4 = new Vue({
-  el: '#app-4',
-  data: {
-    todos: [
-      { text: 'Learn JavaScript' },
-      { text: 'Learn Vue' },
-      { text: 'Build something awesome' }
-    ]
-  }
-})
-</script>
-{% endraw %}
+“Non-Invasively” means without changing the underlying technology to achieve the automation. Process gurus and industry experts won’t deny the fact that automation exists for ages. Cost Savings, Efficiency gain and productivity are all part of the automation for decades.
 
-In the console, enter `app4.todos.push({ text: 'New item' })`. You should see a new item appended to the list.
+So, what’s different in Robotic Automation?
 
-## Handling User Input
+Yes, automation exists for ages but what RPA touches - is the most important aspect of any organization – the Human Capital. Technology has advanced to a point where it has become a reality to build a “digital workforce” and replace (replace might be the wrong term) human workforce. I would rather use “augment” human capabilities. It is an interesting option in various scenarios where organizations have yet to replace or assist manual workers. The potential impact on reducing costs and speeding up various manual tasks, therefore, is high.
 
-To let users interact with your app, we can use the `v-on` directive to attach event listeners that invoke methods on our Vue instances:
+Most organizations have a vast amount of tasks that are not fully automated for a multitude of reasons. RPA offers potential ways to automate all or stages of manual rule-based process and consistently apply rules in which human makes potential errors or apply inconsistent rules. Or it guides human personnel from one step to another through intelligent decision. This will free up the most valuable capital of the organization and allow to deploy them to “more value added” activities.
 
-``` html
-<div id="app-5">
-  <p>{{ message }}</p>
-  <button v-on:click="reverseMessage">Reverse Message</button>
-</div>
-```
-``` js
-var app5 = new Vue({
-  el: '#app-5',
-  data: {
-    message: 'Hello Vue.js!'
-  },
-  methods: {
-    reverseMessage: function () {
-      this.message = this.message.split('').reverse().join('')
-    }
-  }
-})
-```
-{% raw %}
-<div id="app-5" class="demo">
-  <p>{{ message }}</p>
-  <button v-on:click="reverseMessage">Reverse Message</button>
-</div>
-<script>
-var app5 = new Vue({
-  el: '#app-5',
-  data: {
-    message: 'Hello Vue.js!'
-  },
-  methods: {
-    reverseMessage: function () {
-      this.message = this.message.split('').reverse().join('')
-    }
-  }
-})
-</script>
-{% endraw %}
+Robotic process automation (RPA) is not "the" answer to all of an organization's automation problems, but it is an interesting option in various scenarios where organizations have yet to replace or assist manual workers. The potential impact on reducing costs and speeding up various manual tasks, therefore, is high. Most organizations have a vast amount of tasks that are not fully automated for a multitude of reasons.
 
-Note that in this method we update the state of our app without touching the DOM - all DOM manipulations are handled by Vue, and the code you write is focused on the underlying logic.
+Fundamentally an RPA operates by either recording or mapping a task for the software "robot" to follow computer pathways between screens and various data repositories. RPA tools mimic the same "manual" path taken through applications by a human using a combination of user interface (UI) interaction or descriptor technologies.
 
-Vue also provides the `v-model` directive that makes two-way binding between form input and app state a breeze:
+How RPA is different than BPM
 
-``` html
-<div id="app-6">
-  <p>{{ message }}</p>
-  <input v-model="message">
-</div>
-```
-``` js
-var app6 = new Vue({
-  el: '#app-6',
-  data: {
-    message: 'Hello Vue!'
-  }
-})
-```
-{% raw %}
-<div id="app-6" class="demo">
-  <p>{{ message }}</p>
-  <input v-model="message">
-</div>
-<script>
-var app6 = new Vue({
-  el: '#app-6',
-  data: {
-    message: 'Hello Vue!'
-  }
-})
-</script>
-{% endraw %}
+I have recently seen increased attention on organization enhancing their existing BPM (workflow and rules) systems and investments with robotics. For example, integrating robotics into their existing technology and systems to help automate routine desktop work of Customer Service Reps (CSRs) and others.
 
-## Composing with Components
+BPM systems and robotics systems affect two different, but complementary, business problems. Robotics can be brawn of your operations, BPM is the brains. BPM covers both workflow and business rules; it’s an approach leveraging software and services to provide total visibility into your organization. This includes discovering, documenting, automating, and continuously improving business processes to increase efficiency and reduce costs.
 
-The component system is another important concept in Vue, because it's an abstraction that allows us to build large-scale applications composed of small, self-contained, and often reusable components. If we think about it, almost any type of application interface can be abstracted into a tree of components:
+The most value for an organization, however, occurs when Robotics and BPM work together within a company’s architecture. A very simple use case from one of banking customer -
 
-![Component Tree](/images/components.png)
+Digitizing account opening process with a robot enables the BPM system to process work without the sluggish limitation of human data entry. And integrating robotics into the BPM equation has another “intended” consequence... a new source of valuable data (We will touch base with this aspect in near future about operational data and behavioral data).
 
-In Vue, a component is essentially a Vue instance with pre-defined options. Registering a component in Vue is straightforward:
+Some Use Cases of RPA -
 
-``` js
-// Define a new component called todo-item
-Vue.component('todo-item', {
-  template: '<li>This is a todo</li>'
-})
-```
+RPA can be considered in situations in which organizations have found that other integration or automation options are perhaps too expensive or too time-consuming (taking months or years). RPA should be considered both in light of other technical options and with some process change management skills. Use cases for RPA include instances when an organization wants to work with structured data to:
+Automate an existing manual task or process with minimal process re-engineering.
+Reduce or remove head count from batch data input and output tasks or data re keying.
+Link to external systems that cannot be connected to through other IT options.
+Avoid major system integration projects or specific new major application deployments.
+Replace individual "shadow or citizen IT" desktop automation with enterprise wide automation
+Key questions you need to answer before considering Robotic Process Automation
 
-Now you can compose it in another component's template:
+    How efficient are your processes?
 
-``` html
-<ol>
-  <!-- Create an instance of the todo-item component -->
-  <todo-item></todo-item>
-</ol>
-```
+Have you investigated where and why rekeying or collating of data exists? What options are there to automate this activity? Whose time are you paying to save by having people re-key data?
+Can you or by when will you have redesigned the process to get someone else to type in some or all of the data, such as the customer, supplier or the employee?
+Do your processes have sufficient volume to justify robotic process automation?
+Do your processes have the opportunity to run 24/7 or are they limited to office hours, and how does that affect your potential deployment?
+Is the data in a structured format, or do you need to convert it to a structured format through other tools?
+How much short-term process redesign can you do to simply eliminate rekeying or manual tasks?
+Do you have a detailed process flow of the end-to-end activities?
+Do you have highly paid knowledge workers spending a lot of time collating data from multiple sources and doing data analysis in Excel that could be automated?
+2) How effective are your processes?
 
-But this would render the same text for every todo, which is not super interesting. We should be able to pass data from the parent scope into child components. Let's modify the component definition to make it accept a [prop](components.html#Props):
+If you focused on the end-to-end outcome, for example, improving working capital by lowering freight charges, would your focus change to a project about how freight carriers are selected and procurement policies adhered to, which could potentially save much more than initially focusing on further lowering the cost of administrating freight charges? Answering this question will dictate where you should put your focus for coordinating end-to-end processes
+If your goal is to renovate the core applications and deploy bimodal solutions integrating legacy systems with digital technologies, would RPA be a faster, perhaps short-term option to achieve this type of goal? How will removing labor with RPA affect your ability to build business cases for future legacy replacement?
+Is your organization full of shadow/gray IT projects that while they might be effective also be in need of coordination to support master data initiatives and the single view of a customer?
+Some Key takeaways - RPA can be used for manual rule-based process and consistently apply rules in which human makes potential errors or apply inconsistent rules around structured data, RPA applies automation “Non-Invasively”, BPM systems and robotics systems affect two different, but complementary, business problems.
 
-``` js
-Vue.component('todo-item', {
-  // The todo-item component now accepts a
-  // "prop", which is like a custom attribute.
-  // This prop is called todo.
-  props: ['todo'],
-  template: '<li>{{ todo.text }}</li>'
-})
-```
+What’s next beyond RPA? Maybe you’ve seen some discussion online about automation and artificial intelligence (AI) – what’s the difference and how to use them. What’s the deal with AI and Machine Learning right on the heels of RPA? There are some confusion on RPA with AI and Machine Learning and terms are used interchangeably. In my next one, I will talk about that and some of the use cases where AI and Machine Learning can be applied to process automation.
 
-Now we can pass the todo into each repeated component using `v-bind`:
+## RPA 的意义何在
 
-``` html
-<div id="app-7">
-  <ol>
-    <!--
-      Now we provide each todo-item with the todo object
-      it's representing, so that its content can be dynamic.
-      We also need to provide each component with a "key",
-      which will be explained later.
-    -->
-    <todo-item
-      v-for="item in groceryList"
-      v-bind:todo="item"
-      v-bind:key="item.id">
-    </todo-item>
-  </ol>
-</div>
-```
-``` js
-Vue.component('todo-item', {
-  props: ['todo'],
-  template: '<li>{{ todo.text }}</li>'
-})
+Robotic process automation (RPA) is the use of software with artificial intelligence (AI) and machine learning capabilities to handle high-volume, repeatable tasks that previously required humans to perform.
 
-var app7 = new Vue({
-  el: '#app-7',
-  data: {
-    groceryList: [
-      { id: 0, text: 'Vegetables' },
-      { id: 1, text: 'Cheese' },
-      { id: 2, text: 'Whatever else humans are supposed to eat' }
-    ]
-  }
-})
-```
-{% raw %}
-<div id="app-7" class="demo">
-  <ol>
-    <todo-item v-for="item in groceryList" v-bind:todo="item" :key="item.id"></todo-item>
-  </ol>
-</div>
-<script>
-Vue.component('todo-item', {
-  props: ['todo'],
-  template: '<li>{{ todo.text }}</li>'
-})
-var app7 = new Vue({
-  el: '#app-7',
-  data: {
-    groceryList: [
-      { id: 0, text: 'Vegetables' },
-      { id: 1, text: 'Cheese' },
-      { id: 2, text: 'Whatever else humans are supposed to eat' }
-    ]
-  }
-})
-</script>
-{% endraw %}
 
-This is a contrived example, but we have managed to separate our app into two smaller units, and the child is reasonably well-decoupled from the parent via the props interface. We can now further improve our `<todo-item>` component with more complex template and logic without affecting the parent app.
+RPA technology, sometimes called a software robot or bot, mimics a human worker, logging into applications, entering data, calculating and completing tasks, and logging out.
 
-In a large application, it is necessary to divide the whole app into components to make development manageable. We will talk a lot more about components [later in the guide](components.html), but here's an (imaginary) example of what an app's template might look like with components:
+RPA software isn't part of an organization's IT infrastructure. Instead, it sits on top of it, enabling a company to implement the technology quickly and efficiently -- all without changing the existing infrastructure and systems.
 
-``` html
-<div id="app">
-  <app-nav></app-nav>
-  <app-view>
-    <app-sidebar></app-sidebar>
-    <app-content></app-content>
-  </app-view>
-</div>
-```
+The evolution of RPA
+Although the term "robotic process automation" can be traced to the early 2000s, it had been developing for a number of years previously.
 
-### Relation to Custom Elements
+RPA evolved from three key technologies: screen scraping, workflow automation and artificial intelligence.
 
-You may have noticed that Vue components are very similar to **Custom Elements**, which are part of the [Web Components Spec](https://www.w3.org/wiki/WebComponents/). That's because Vue's component syntax is loosely modeled after the spec. For example, Vue components implement the [Slot API](https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Slots-Proposal.md) and the `is` special attribute. However, there are a few key differences:
+Screen scraping is the process of collecting screen display data from a legacy application so that the data can be displayed by a more modern user interface. The advantages of workflow automation software, which eliminates the need for manual data entry and increases order fulfillment rates, include increased speed, efficiency and accuracy. Lastly, artificial intelligence involves the ability of computer systems to perform tasks that normally require human intervention and intelligence.
 
-1. The Web Components Spec is still in draft status, and is not natively implemented in every browser. In comparison, Vue components don't require any polyfills and work consistently in all supported browsers (IE9 and above). When needed, Vue components can also be wrapped inside a native custom element.
+Benefits of RPA
+Robotic process automation technology can help organizations on their digital transformation journeys by:
 
-2. Vue components provide important features that are not available in plain custom elements, most notably cross-component data flow, custom event communication and build tool integrations.
+Enabling better customer service
+Ensuring business operations and processes comply with regulations and standards
+Allowing processes to be completed much more rapidly
+Providing improved efficiency by digitizing and auditing process data
+Creating cost savings for manual and repetitive tasks
+Enabling employees to be more productive
+Applications of RPA
+Some of the top applications of RPA include:
 
-## Ready for More?
+Customer service: RPA can help companies offer better customer service by automating contact center tasks, including verifying e-signatures, uploading scanned documents and verifying information for automatic approvals or rejections.
+Accounting: Organizations can use RPA for general accounting, operational accounting, transactional reporting and budgeting.
+Financial services: Companies in the financial services industry can use RPA for foreign exchange payments, automating account openings and closings, managing audit requests and processing insurance claims.
+Healthcare: Medical organizations can use RPA for handling patient records, claims, customer support, account management, billing, reporting and analytics.
+Human resources: RPA can automate HR tasks, including onboarding and offboarding, updating employee information and timesheet submission processes.
+Supply chain management: RPA can be used for procurement, automating order processing and payments, monitoring inventory levels and tracking shipments.
+Differences between RPA and regular automation
+What distinguishes RPA from traditional IT automation is the ability of the RPA software to be aware and adapt to changing circumstances, exceptions and new situations. Once RPA software has been trained to capture and interpret the actions of specific processes in existing software applications, it can then manipulate data, trigger responses, initiate new actions and communicate with other systems autonomously.
 
-We've briefly introduced the most basic features of Vue.js core - the rest of this guide will cover them and other advanced features with much finer details, so make sure to read through it all!
+RPA software is particularly useful for organizations that have many different and complicated systems that need to interact together fluidly.
 
-<div id="video-modal" class="modal"><div class="video-space" style="padding: 56.25% 0 0 0; position: relative;"><iframe src="https://player.vimeo.com/video/247494684" style="height: 100%; left: 0; position: absolute; top: 0; width: 100%; margin: 0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
+For instance, if an electronic form from a human resource system is missing a zip code, traditional automation software would flag the form as having an exception and an employee would handle the exception by looking up the correct zip code and entering it on the form. Once the form is complete, the employee might send it on to payroll so the information can be entered into the organization's payroll system.
+
+With RPA technology, however, software that has the ability to adapt, self-learn and self-correct would handle the exception and interact with the payroll system without human assistance.
+
+Top RPA vendors
+Automation Anywhere Inc. provides an enterprise digital workforce platform geared toward procure-to-pay, quote-to-cash, HR, claims processing and other back-office processes.
+Blue Prism focuses on providing organizations in regulated industries with more agile virtual workforces, offering desktop-aligned robots that are defined and managed centrally.
+EdgeVerve Limited, an Infosys company, helps enterprises modernize customer service, improve business processes and enhance operational productivity.
+HelpSystems enables companies to streamline IT and business operations by automating tasks and workflows without the need to write code.
+UiPath offers an open platform to help organizations efficiently automate business processes.
+Workfusion combines robotics, AI-powered cognitive automation and workforce orchestration to automate enterprise business processes.
+What to look for in RPA software
+When enterprise leaders look for RPA technologies, they should consider a number of things, including:
+
+Scalability: Organizations shouldn't select RPA software that requires them to deploy software robots to desktops or virtualized environments. They should look for RPA platforms that can be centrally managed and scale massively.
+Speed: Enterprises should be able to design and test new robotic processes in a few hours or less, as well as optimize the bots to work quickly.
+Reliability: As companies launch robots to automate hundreds or even thousands of tasks, they should look for tools with built-in monitoring and analytics that enable them to monitor the health of their systems.
+Simplicity: Organizations should look for products that are simple enough that any employee in the business can build and use them to handle various kinds of work, including collecting data and turning content into information that enables leaders to make the best business decisions.
+Intelligence: The best RPA tools can support simple task-based activities, read and write to any data source, and take advantage of more advanced learning to further improve automation.
+Enterprise-class: Companies should look for tools that are built from the ground up for enterprise-grade scalability, reliability and manageability.
+C-level decision-making around RPA
+Though automation software is expected to replace up to 140 million full-time employees worldwide by 2025, many high-quality jobs will be created for those who maintain and improve RPA software.
+
+When software robots do replace people in the enterprise, C-level executives need to be responsible for ensuring that business outcomes are achieved and new governance policies are met.
+
+Robotic process automation technology also requires that the CTO/CIO take more of a leadership role and assume accountability for the business outcomes and the risks of deploying RPA tools.
+
+Additionally, the COO, CIO and chief human resources officer, as well as the relevant C-level executive who owns the process being automated, should all work toward ensuring the availability of an enterprise-grade, secure platform for controlling and operating bots across systems.
+
+Where the robotic process automation market is heading
+A Global Market Insights Inc. report expects the RPA market to reach $5 billion by 2024. The increased adoption of RPA technologies by organizations to enhance their capabilities and performance and boost cost savings will reportedly drive the growth of the robotic process automation market most during that time.
+
+
