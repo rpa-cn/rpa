@@ -139,6 +139,8 @@ offline:
 deploy:
   type: git
   repository: https://github.com/rpa-cn/rpa.git
+  name: wanghaisheng
+  email: edwin_uestc@163.com
 
 feed:
   type: atom
