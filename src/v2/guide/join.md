@@ -1,5 +1,5 @@
 ---
-title: Join the Vue.js Community!
+title: 加入 RPA 社区!
 type: guide
 order: 802
 ---
@@ -12,13 +12,13 @@ Now we'll answer both what the community can do for you and what you can do for 
 
 ### Get Support
 
-- [Forum](https://forum.vuejs.org/): The best place to ask questions and get answers about Vue and its ecosystem.
-- [Chat](https://chat.vuejs.org/): A place for Vue devs to meet and chat in real time.
-- [GitHub](https://github.com/vuejs): If you have a bug to report or feature to request, that's what the GitHub issues are for. We also welcome pull requests!
+- [Forum](https://forum.vuejs.org/): The best place to ask questions and get answers about RPA and its ecosystem.
+- [Chat](https://weibo.com/p/2304914240715636861725/): A place for RPA devs to meet and chat in real time.
+- [GitHub](https://github.com/rpa-cn): If you have a bug to report or feature to request, that's what the GitHub issues are for. We also welcome pull requests!
 
 ### Explore the Ecosystem
 
-- [The Awesome Vue Page](https://github.com/vuejs/awesome-vue): See what other awesome resources have been published by other awesome people.
+- [The Awesome RPA Page](https://github.com/vuejs/awesome-vue): See what other awesome resources have been published by other awesome people.
 - [The "Show and Tell" Subforum](https://forum.vuejs.org/c/show-and-tell): Another great place to check out what others have built with and for the growing Vue ecosystem.
 
 ## What You Can Do

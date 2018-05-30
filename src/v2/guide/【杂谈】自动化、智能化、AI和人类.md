@@ -2,7 +2,7 @@
 ---
 title: 杂谈-自动化、AI、机器人、人类
 type: guide
-order: 1
+order: 2
 gz_size: "30.67"
 ---
 

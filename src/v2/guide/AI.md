@@ -2,13 +2,16 @@
 ---
 title: AI
 type: guide
-order: 2
+order: 3
 gz_size: "30.67"
 ---
 
 
 
+## 已实现产品化的商用AI
 
+
+本文为大家盘点已实现产品化的商用AI，看看他们在业界都搞出些什么名堂。
 
 作者：Liam Hänel
 
