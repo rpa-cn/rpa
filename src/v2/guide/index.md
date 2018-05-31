@@ -171,3 +171,10 @@ Where the robotic process automation market is heading
 A Global Market Insights Inc. report expects the RPA market to reach $5 billion by 2024. The increased adoption of RPA technologies by organizations to enhance their capabilities and performance and boost cost savings will reportedly drive the growth of the robotic process automation market most during that time.
 
 
+
+
+## RPA与自动化测试工具、爬虫工具、按键精灵的异同
+
+
+
+

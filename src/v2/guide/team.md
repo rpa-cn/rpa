@@ -19,7 +19,7 @@ order: 803
       </h3>
       <dl>
         <template v-if="profile.reposOfficial">
-          <dt>Core focus</dt>
+          <dt>关注领域</dt>
           <dd>
             <ul>
               <li v-for="repo in profile.reposOfficial">
@@ -103,6 +103,18 @@ order: 803
             <i class="fa fa-codepen"></i>
             <span class="sr-only">CodePen</span>
           </a>
+          <a class=weibo v-if="profile.weibo" :href="'https://weibo.com/' + profile.weibo">
+            <i class="fa fa-weibo"></i>
+            <span class="sr-only">微博</span>
+          </a>
+          <a class=zhihu v-if="profile.zhihu" :href="'https://www.zhihu.com/people/' + profile.zhihu">
+            <i class="fa fa-zhihu"></i>
+            <span class="sr-only">知乎</span>
+          </a>
+          <a class=weixin v-if="profile.weixin" :href="'https://weixin.com/' + profile.weixin">
+            <i class="fa fa-weixin"></i>
+            <span class="sr-only">微信</span>
+          </a>          
         </footer>
       </dl>
     </div>
@@ -218,7 +230,7 @@ order: 803
     'Munich, Germany': [48.137154, 11.576124],
     'Orlando, FL, USA': [28.538335, -81.379236],
     'Paris, France': [48.856614, 2.352222],
-    'Poznań, Poland': [52.4006553, 16.761583],
+    'China': [52.4006553, 16.761583],
     'Seoul, South Korea': [37.566535, 126.977969],
     'Shanghai, China': [31.230390, 121.473702],
     'Taquaritinga, Brazil': [-21.430094, -48.515285],
@@ -247,628 +259,193 @@ order: 803
   }
 
   var team = [{
-    name: 'Evan You',
-    title: 'Benevolent Dictator For Life',
-    city: 'Jersey City, NJ, USA',
-    languages: ['zh', 'en'],
-    github: 'yyx990803',
-    twitter: 'youyuxi',
+    name: '中国安防展览网AFzhan',
+    title: '',
+    city: 'China',
+    languages: ['zh'],
+    weixin: 'afzhan2005',
+    github: '111',
+    weibo: 'afzhan',
+    zhihu: 'liang-yigang',
     work: {
-      role: 'Creator',
-      org: 'Vue.js'
+      role: '官方微博',
+      org: '浙江兴旺宝明通网络有限公司'
     },
     reposOfficial: [
-      'vuejs/*', 'vuejs-templates/*'
+      '自动化'
     ],
     links: [
-      'https://www.patreon.com/evanyou'
+      'http://www.afzhan.com'
     ]
   }]
 
   team = team.concat(shuffle([
     {
-      name: 'Chris Fritz',
+      name: '任子旭',
       title: 'Good Word Putter-Togetherer',
-      city: 'Lansing, MI, USA',
-      languages: ['en', 'de'],
-      github: 'chrisvfritz',
-      twitter: 'chrisvfritz',
-      work: {
-        role: 'Educator & Consultant'
-      },
-      reposOfficial: [
-        'vuejs.org', 'vue-migration-helper'
-      ],
-      reposPersonal: [
-        'vue-2.0-simple-routing-example', 'vue-ssr-demo-simple'
-      ],
-      links: [
-        'https://www.patreon.com/chrisvuefritz'
-      ]
-    },
-    {
-      name: 'Eduardo',
-      title: 'Real-Time Rerouter',
-      city: 'Paris, France',
-      languages: ['es', 'fr', 'en'],
-      github: 'posva',
-      twitter: 'posva',
-      work: {
-        role: 'Lead Instructor',
-        org: 'IronHack',
-        orgUrl: 'https://www.ironhack.com/'
-      },
-      reposOfficial: [
-        'vuefire', 'vue-router'
-      ],
-      reposPersonal: [
-        'vuexfire', 'vue-mdc', 'vue-motion'
-      ],
-      links: [
-        'https://www.codementor.io/posva'
-      ]
-    },
-    {
-      name: 'Jinjiang',
-      title: 'Mobile Extrapolator',
-      city: 'Hangzhou, China',
-      languages: ['zh', 'en'],
-      github: 'jinjiang',
-      twitter: 'zhaojinjiang',
-      work: {
-        org: 'Alibaba',
-        orgUrl: 'https://www.alibaba.com/'
-      },
-      reposOfficial: [
-        'cn.vuejs.org'
-      ],
-      reposPersonal: [
-        'apache/incubator-weex'
-      ]
-    },
-    {
-      name: 'EGOIST',
-      title: 'Build Tool Simplificator',
-      city: 'Chengdu, China',
-      languages: ['zh', 'en'],
-      github: 'egoist',
-      twitter: '_egoistlily',
-      reposOfficial: [
-        'vue-cli'
-      ],
-      reposPersonal: [
-        'poi', 'ream', 'vue-play'
-      ]
-    },
-    {
-      name: 'Katashin',
-      title: 'One of a Type State Manager',
-      city: 'Tokyo, Japan',
-      languages: ['jp', 'en'],
-      work: {
-        org: 'oRo Co., Ltd.',
-        orgUrl: 'https://www.oro.com'
-      },
-      github: 'ktsn',
-      twitter: 'ktsn',
-      reposOfficial: [
-        'vuex', 'vue-class-component'
-      ]
-    },
-    {
-      name: 'Kazupon',
-      title: 'Validated Internationalizing Missionary',
-      city: 'Tokyo, Japan',
-      languages: ['jp', 'en'],
-      github: 'kazupon',
-      twitter: 'kazu_pon',
-      work: {
-        role: 'CTO & Full Stack Developer'
-      },
-      reposOfficial: [
-        'vuejs.org', 'jp.vuejs.org'
-      ],
-      reposPersonal: [
-        'vue-i18n', 'vue-i18n-loader', 'vue-i18n-extensions'
-      ],
-      links: [
-        'https://cuusoo.com', 'http://frapwings.jp'
-      ]
-    },
-    {
-      name: 'Rahul Kadyan',
-      title: 'Ecosystem Glue Chemist',
-      city: 'Bangalore, India',
-      languages: ['hi', 'en'],
-      work: {
-        role: 'Software Engineer',
-        org: 'Myntra',
-        orgUrl: 'https://www.myntra.com/'
-      },
-      github: 'znck',
-      twitter: 'znck0',
-      reposOfficial: [
-        'rollup-plugin-vue', 'vue-issue-helper'
-      ],
-      reposPersonal: [
-        'vue-keynote', 'bootstrap-for-vue', 'vue-interop'
-      ],
-      links: [
-        'https://znck.me', 'https://www.codementor.io/znck'
-      ]
-    },
-    {
-      name: 'Alan Song',
-      title: 'Regent of Routing',
-      city: 'Hangzhou, China',
-      languages: ['zh', 'en'],
-      work: {
-        role: 'Cofounder',
-        org: 'Futurenda',
-        orgUrl: 'https://www.futurenda.com/'
-      },
-      github: 'fnlctrl',
-      reposOfficial: [
-        'vue-router'
-      ]
-    },
-    {
-      name: 'Blake Newman',
-      title: 'Performance Specializer & Code Deleter',
-      city: 'London, UK',
-      languages: ['en'],
-      work: {
-        role: 'Software Engineer',
-        org: 'Attest',
-        orgUrl: 'https://www.askattest.com/'
-      },
-      github: 'blake-newman',
-      twitter: 'blakenewman',
-      reposOfficial: [
-        'vuex', 'vue-router', 'vue-loader'
-      ]
-    },
-    {
-      name: 'Phan An',
-      title: 'Backend Designer & Process Poet',
-      city: 'Munich, Germany',
-      languages: ['vi', 'en'],
-      github: 'phanan',
-      twitter: 'notphanan',
-      reposOfficial: [
-        'vuejs.org', {
-          name: 'vi.vuejs.org',
-          url: 'https://github.com/vuejs-vn/vuejs.org'
-        }
-      ],
-      reposPersonal: [
-        'vuequery', 'vue-google-signin-button'
-      ],
-      links: [
-        'https://phanan.net/'
-      ]
-    },
-    {
-      name: 'Linusborg',
-      title: 'Hive-Mind Community Wrangler (Probably a Bot)',
-      city: 'Mannheim, Germany',
-      languages: ['de', 'en'],
-      github: 'LinusBorg',
-      twitter: 'Linus_Borg',
-      reposOfficial: [
-        'vuejs/*', 'vuejs-templates/*', 'vue-touch'
-      ],
-      reposPersonal: [
-        'portal-vue'
-      ],
-      links: [
-        'https://forum.vuejs.org/'
-      ]
-    },
-    {
-      name: 'Denis Karabaza',
-      title: 'Director of Directives (Emoji-Human Hybrid)',
-      city: 'Dubna, Russia',
-      languages: ['ru', 'en'],
-      github: 'simplesmiler',
-      twitter: 'simplesmiler',
-      work: {
-        role: 'Software Engineer',
-        org: 'Neolant',
-        orgUrl: 'http://neolant.ru/'
-      },
-      reposPersonal: [
-        'vue-focus', 'vue-clickaway'
-      ],
-      links: [
-        'mailto:denis.karabaza@gmail.com'
-      ]
-    },
-    {
-      name: 'Guillaume Chau',
-      title: 'Client-Server Astronaut',
-      city: 'Lyon, France',
-      languages: ['fr', 'en'],
-      github: 'Akryum',
-      twitter: 'Akryum',
-      work: {
-        role: 'Frontend Developer',
-        org: 'Livestorm',
-        orgUrl: 'https://livestorm.co/'
-      },
-      reposOfficial: [
-        'vue-devtools',
-        'vue-cli',
-        'vue-curated'
-      ],
-      reposPersonal: [
-        'vue-apollo', 'vue-meteor', 'vue-virtual-scroller', 'v-tooltip'
-      ]
-    },
-    {
-      name: 'Edd Yerburgh',
-      title: 'Testatron Alpha 9000',
-      city: 'London, UK',
-      languages: ['en'],
-      github: 'eddyerburgh',
-      twitter: 'EddYerburgh',
-      work: {
-        role: 'Full Stack Developer'
-      },
-      reposOfficial: [
-        'vue-test-utils'
-      ],
-      reposPersonal: [
-        'avoriaz'
-      ],
-      links: [
-        'https://www.eddyerburgh.me'
-      ]
-    },
-    {
-      name: 'defcc',
-      title: 'Details Deity & Bug Surgeon',
-      city: 'Chongqing, China',
-      languages: ['zh', 'en'],
-      github: 'defcc',
-      work: {
-        org: 'zbj.com',
-        orgUrl: 'http://www.zbj.com/'
-      },
-      reposOfficial: [
-        'vue', 'vuejs.org', 'cn.vuejs.org'
-      ],
-      reposPersonal: [
-        'weexteam/weex-vue-framework', 'into-vue'
-      ]
-    },
-    {
-      name: 'gebilaoxiong',
-      title: 'Issue Annihilator',
-      city: 'Chongqing, China',
-      languages: ['zh', 'en'],
-      github: 'gebilaoxiong',
-      work: {
-        org: 'zbj.com',
-        orgUrl: 'http://www.zbj.com/'
-      },
-      reposOfficial: [
-        'vue'
-      ]
-    },
-    {
-      name: 'Andrew Tomaka',
-      title: 'The Server Server',
-      city: 'East Lansing, MI, USA',
-      languages: ['en'],
-      github: 'atomaka',
-      twitter: 'atomaka',
-      reposOfficial: [
-        'vuejs/*'
-      ],
-      work: {
-        org: 'Michigan State University',
-        orgUrl: 'https://msu.edu/'
-      },
-      links: [
-        'https://atomaka.com/'
-      ]
-    },
-    {
-      name: 'Sarah Drasner',
-      city: 'Denver, CO, USA',
-      languages: ['en'],
-      work: {
-        role: 'Senior Cloud Developer Advocate',
-        org: 'Microsoft',
-        orgUrl: 'https://www.microsoft.com/'
-      },
-      github: 'sdras',
-      twitter: 'sarah_edo',
-      codepen: 'sdras',
-      reposPersonal: [
-        'intro-to-vue', 'vue-vscode-snippets', 'vue-sublime-snippets', 'nuxt-type', 'animating-vue-workshop', 'cda-locale', 'vue-weather-notifier'
-      ]
-    },
-    {
-      name: 'Damian Dulisz',
-      title: 'Dark Mage of Plugins, News, and Confs',
-      city: 'Wrocław, Poland',
-      languages: ['pl', 'en'],
-      github: 'shentao',
-      twitter: 'DamianDulisz',
-      work: {
-        role: 'Consultant'
-      },
-      reposPersonal: [
-        'shentao/vue-multiselect'
-      ]
-    },
-    {
-      name: 'kingwl',
-      title: 'New Bee',
-      city: 'Beijing, China',
+      city: 'China',
       languages: ['zh'],
+      github: '111',
+      twitter: '',
+      gongzhonghao: 'RPA2018',
+      weixin: 'rrenzixu',     
+      zhihu: 'ZackRen',            
       work: {
-        role: 'Software Development Engineer',
-        org: 'Chaitin',
-        orgUrl: 'https://chaitin.cn/'
+        role: 'IT咨询',
+        org: '致同会计师事务所'
       },
-      github: 'kingwl',
       reposOfficial: [
-        'vue'
-      ]
-    },
-    {
-      name: 'Alex Kyriakidis',
-      title: 'Vueducator Extraordinaire',
-      city: 'Thessaloniki, Greece',
-      languages: ['el', 'en'],
-      github: 'hootlex',
-      twitter: 'hootlex',
-      work: {
-        role: 'Consultant / Author'
-      },
-      reposPersonal: [
-        'vuejs-paginator', 'vuedo/vuedo', 'the-majesty-of-vuejs-2'
+       'RPA'
       ],
       links: [
-        'https://vuejsfeed.com/', 'https://vueschool.io/'
+        '13811054515@126.com'
       ]
     },
     {
-      name: 'Michał Sajnóg',
-      city: 'Poznań, Poland',
-      languages: ['pl', 'en'],
-      github: 'michalsnik',
-      twitter: 'michalsnik',
+      name: '梁一纲',
+      city: 'China',
+      languages: ['zh'],
+      github: '111',
+      twitter: '',
+      gongzhonghao: '',
+      weixin: 'cunama',     
+      zhihu: 'liang-yigang',            
       work: {
-        role: 'Senior Frontend Developer / Team Leader',
-        org: 'Netguru',
-        orgUrl: 'https://netguru.co/'
+        role: '咨询/流程优化/开发',
+        org: '埃森哲'
       },
       reposOfficial: [
-        'eslint-plugin-vue',
-        'vue-devtools'
+       'RPA'
       ],
-      reposPersonal: [
-        'vue-computed-helpers', 'vue-content-placeholders'
+      links: [
+        ''
       ]
-    }
-  ]))
+    },
+    {
+      name: '猫奴二胖子',
+      city: 'China',
+      languages: ['zh'],
+      github: '111',
+      twitter: '',
+      gongzhonghao: '',
+      weixin: '',     
+      zhihu: 'erpangzier',            
+      work: {
+        role: '咨询/流程优化/开发',
+        org: 'xx'
+      },
+      reposOfficial: [
+       '职业猫奴'
+      ],
+      links: [
+        ''
+      ]
+    },
+    {
+      name: '徐鹏程',
+      city: 'China',
+      languages: ['zh'],
+      github: '111',
+      twitter: '',
+      gongzhonghao: '',
+      weixin: '',     
+      zhihu: 'erpangzier',            
+      work: {
+        role: 'CIO',
+        org: 'HRIS'
+      },
+      reposOfficial: [
+       'RPA'
+      ],
+      links: [
+        'https://www.zhihu.com/people/xu-peng-cheng-72-14/activities'
+      ]
+    },
+    {
+      name: 'slice',
+      city: 'China',
+      languages: ['zh'],
+      github: '111',
+      twitter: '',
+      gongzhonghao: '',
+      weixin: '',     
+      zhihu: 'pyj-8-53',            
+      work: {
+        role: '',
+        org: ''
+      },
+      reposOfficial: [
+       'RPA'
+      ],
+      links: [
+        'https://www.zhihu.com/people/pyj-8-53/activities'
+      ]
+    },
+    {
+      name: '陈键',
+      city: 'China',
+      languages: ['zh'],
+      github: '111',
+      twitter: '',
+      gongzhonghao: '',
+      weixin: '',     
+      zhihu: 'chen-jian-34',            
+      work: {
+        role: '键精灵（RPA）开发者',
+        org: ''
+      },
+      reposOfficial: [
+       'RPA'
+      ],
+      links: [
+        'https://www.zhihu.com/people/chen-jian-34/activities'
+      ]
+    },
+    {
+      name: 'joseph',
+      city: 'China',
+      languages: ['zh'],
+      github: '111',
+      twitter: '',
+      gongzhonghao: '',
+      weixin: '',     
+      zhihu: 'chen-jian-34',            
+      work: {
+        role: '外包程序狗',
+        org: ''
+      },
+      reposOfficial: [
+       'RPA'
+      ],
+      links: [
+        'https://www.zhihu.com/people/chen-jian-34/activities'
+      ]
+}       
+
+
+ ]))
 
   var partners = [
     {
-      name: 'Sebastien Chopin',
-      title: '#1 Nuxt Brother',
-      city: 'Paris, France',
-      languages: ['fr', 'en'],
-      github: 'Atinux',
-      twitter: 'Atinux',
+      name: '折向东',
+      city: 'China',
+      languages: ['zh'],
+      github: '111',
+      twitter: '',
+      gongzhonghao: '瞎说开发那些事',
+      weixin: '',     
+      zhihu: 'xdong-she',            
       work: {
-        org: 'Orion',
-        orgUrl: 'https://orion.sh'
+        role: '软件开发工程师',
+        org: 'HPE'
       },
-      reposPersonal: [
-        'nuxt/*', 'nuxt-community/*', 'declandewet/vue-meta'
-      ]
-    },
-    {
-      name: 'Alexandre Chopin',
-      title: '#1 Nuxt Brother',
-      city: 'Bordeaux, France',
-      languages: ['fr', 'en'],
-      github: 'alexchopin',
-      twitter: 'ChopinAlexandre',
-      work: {
-        org: 'Orion',
-        orgUrl: 'https://orion.sh'
-      },
-      reposPersonal: [
-        'nuxt/*', 'nuxt-community/*', 'vue-flexboxgrid'
-      ]
-    },
-    {
-      name: 'Khary Sharpe',
-      title: 'Viral Newscaster',
-      city: 'Kingston, Jamaica',
-      languages: ['en'],
-      github: 'kharysharpe',
-      twitter: 'kharysharpe',
-      links: [
-        'https://twitter.com/VueJsNews',
-        'http://www.kharysharpe.com/'
-      ]
-    },
-    {
-      name: 'Pooya Parsa',
-      title: 'Nuxtification Modularizer',
-      city: 'Tehran, Iran',
-      languages: ['fa', 'en'],
-      github: 'pi0',
-      twitter: '_pi0_',
-      work: {
-        role: 'Technical Advisor',
-        org: 'Fandogh (AUT University)',
-        orgUrl: 'https://fandogh.org'
-      },
-      reposPersonal: [
-        'nuxt/nuxt.js', 'nuxt-community/modules', 'bootstrap-vue/bootstrap-vue'
-      ]
-    },
-    {
-      name: 'Yi Yang',
-      city: 'Shanghai, China',
-      title: 'Interface Elementologist',
-      languages: ['zh', 'en'],
-      github: 'Leopoldthecoder',
-      work: {
-        org: 'ele.me',
-        orgUrl: 'https://www.ele.me',
-      },
-      reposPersonal: [
-        'elemefe/element', 'elemefe/mint-ui'
-      ]
-    },
-    {
-      name: 'Bruno Lesieur',
-      title: 'French Community Director',
-      city: 'Annecy, France',
-      languages: ['fr', 'en'],
-      github: 'Haeresis',
-      twitter: 'MachinisteWeb',
-      work: {
-        role: 'Cofounder',
-        org: 'Orchard ID',
-        orgUrl: 'https://www.orchard-id.com/'
-      },
-      reposPersonal: [
-        'vuejs-fr/*', 'Haeresis/node-atlas-hello-vue'
+      reposOfficial: [
+       'RPA'
       ],
       links: [
-        'https://node-atlas.js.org/', 'https://blog.lesieur.name/'
+        'https://www.zhihu.com/people/xdong-she/activities'
       ]
-    },
-    {
-      name: 'ChangJoo Park',
-      title: 'Vuenthusiastic Korean Community Organizer',
-      city: 'Seoul, South Korea',
-      languages: ['ko', 'en'],
-      github: 'changjoo-park',
-      twitter: 'pcjpcj2',
-      reposPersonal: [
-        'vuejs-kr/kr.vuejs.org', 'ChangJoo-Park/vue-component-generator'
-      ],
-      links: [
-        'https://vuejs-kr.github.io',
-        'https://twitter.com/pcjpcj2'
-      ]
-    },
-    {
-      name: 'Erick Petrucelli',
-      title: 'Perfectionist Chief Translator for Portuguese',
-      city: 'Taquaritinga, Brazil',
-      languages: ['pt', 'en'],
-      github: 'ErickPetru',
-      twitter: 'erickpetru',
-      work: {
-        role: 'Teacher',
-        org: 'Fatec Taquaritinga',
-        orgUrl: 'http://www.fatectq.edu.br/'
-      },
-      reposPersonal: [
-        'vuejs-br/br.vuejs.org', 'ErickPetru/vue-feathers-chat'
-      ]
-    },
-    {
-      name: 'Razvan Stoenescu',
-      title: 'Deep Space Quasar Creator',
-      city: 'Bucharest, Romania',
-      languages: ['ro', 'en'],
-      github: 'rstoenescu',
-      twitter: 'quasarframework',
-      work: {
-        role: 'Developer',
-        org: 'Quasar Framework',
-        orgUrl: 'http://quasar-framework.org/'
-      },
-      reposPersonal: [
-        'quasarframework/quasar', 'quasarframework/quasar-cli', 'quasarframework/quasar-play'
-      ]
-    },
-    {
-      name: 'Jilson Thomas',
-      title: 'Vue Promoter and VueJobs Guy',
-      city: 'Toronto, Canada',
-      languages: ['en'],
-      github: 'JillzTom',
-      twitter: 'jilsonthomas',
-      work: {
-        role: 'Senior Frontend Developer',
-        org: 'Nominator',
-        orgUrl: 'https://nominator.com/'
-      },
-      links: [
-        'https://vuejobs.com'
-      ]
-    },
-    {
-      name: 'Israel Ortuño',
-      title: 'VueJobs Buccaneer',
-      city: 'Alicante, Spain',
-      languages: ['es', 'en'],
-      github: 'IsraelOrtuno',
-      twitter: 'IsraelOrtuno',
-      work: {
-        role: 'Full Stack Web Developer',
-        org: 'Freelance'
-      },
-      links: [
-        'https://vuejobs.com'
-      ]
-    },
-    {
-      name: 'John Leider',
-      title: 'Vuetiful Framework Sculptor',
-      city: 'Orlando, FL, USA',
-      languages: ['en'],
-      github: 'vuetifyjs',
-      twitter: 'vuetifyjs',
-      work: {
-        role: 'Developer',
-        org: 'Fast Forward Academy',
-        orgUrl: 'https://fastforwardacademy.com'
-      },
-      reposPersonal: [
-        'vuetifyjs/vuetify'
-      ]
-    },
-    {
-      name: 'Grigoriy Beziuk',
-      title: 'Translation Gang Leader',
-      city: 'Moscow, Russia',
-      languages: ['ru', 'de', 'en'],
-      github: 'gbezyuk',
-      work: {
-        role: 'Full Stack Web Developer',
-        org: 'Self Employed',
-        orgUrl: 'http://gbezyuk.ru'
-      },
-      reposPersonal: [
-        'translation-gang/ru.vuejs.org'
-      ]
-    },
-    {
-      name: 'Alexander Sokolov',
-      title: 'Russian Translation Sharp Eye',
-      city: 'Krasnodar, Russia',
-      languages: ['ru', 'en'],
-      github: 'Alex-Sokolov',
-      reposPersonal: [
-        'translation-gang/ru.vuejs.org'
-      ]
-    }
-  ]
+}  ]
 
   Vue.component('vuer-profile', {
     template: '#vuer-profile-template',
@@ -946,7 +523,7 @@ order: 803
         )
       },
       hasSocialLinks: function () {
-        return this.profile.github || this.profile.twitter || this.profile.codepen
+        return this.profile.github || this.profile.twitter || this.profile.codepen || this.profile.weibo || this.profile.weixin  || this.profile.gongzhonghao
       }
     },
     methods: {
