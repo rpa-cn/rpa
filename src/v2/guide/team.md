@@ -125,7 +125,7 @@ order: 803
   <div class="team">
 
     <h2 id="the-core-team">
-      The Core Team
+      实战派
       <button
         v-if="geolocationSupported && !userPosition"
         @click="getUserPosition"
@@ -165,7 +165,7 @@ order: 803
 
   <div class="team">
     <h2 id="community-partners">
-      Community Partners
+      站台帮
       <button
         v-if="geolocationSupported && !userPosition"
         @click="getUserPosition"
@@ -258,7 +258,91 @@ order: 803
     ro: 'Română'
   }
 
-  var team = [{
+  var team = [
+  {
+    name: 'Saurav',
+    title: '',
+    city: 'India',
+    languages: ['en'],
+    weixin: '',
+    github: '111',
+    weibo: '',
+    zhihu: '',
+    work: {
+      role: 'Senior Research Analyst',
+      org: 'Edureka'
+    },
+    reposOfficial: [
+      'Top Writer - RPA & UiPath Technology is a kind monster, I believe.'
+    ],
+    links: [
+      'http://www.linkedin.com/in/saurav25',
+      'https://www.facebook.com/prratt'
+    ]
+  },
+  {
+    name: 'Tolani Jaiye-Tikolo',
+    title: '',
+    city: 'Ireland',
+    languages: ['en'],
+    weixin: '',
+    github: '111',
+    weibo: '',
+    zhihu: '',
+    work: {
+      role: 'Robotic Process Automation (RPA) Developer',
+      org: 'Blue Prism'
+    },
+    reposOfficial: [
+      'Top Writer - RPA'
+    ],
+    links: [
+      'https://www.facebook.com/'
+    ]
+  },
+    {
+    name: 'Siyong Liu',
+    title: '',
+    city: 'Singapore',
+    languages: ['en'],
+    weixin: '',
+    github: '111',
+    weibo: '',
+    zhihu: '',
+    work: {
+      role: 'Thought Leader in Robotic Process Automaton.',
+      org: ''
+    },
+    reposOfficial: [
+      'Top Writer - RPA & UiPath'
+    ],
+    links: [
+      'https://www.cfb-bots.com/blog',
+      'https://www.linkedin.com/in/siyong-liu-20027210/'
+    ]
+  }, 
+    {
+    name: 'Saurav',
+    title: '',
+    city: 'China',
+    languages: ['en'],
+    weixin: '',
+    github: '111',
+    weibo: '',
+    zhihu: '',
+    work: {
+      role: 'Technology is a kind monster, I believe.',
+      org: ''
+    },
+    reposOfficial: [
+      'Top Writer - RPA & UiPath'
+    ],
+    links: [
+      'http://www.linkedin.com/in/saurav25',
+      'https://www.facebook.com/prratt'
+    ]
+  }, 
+  {
     name: '中国安防展览网AFzhan',
     title: '',
     city: 'China',
@@ -277,7 +361,9 @@ order: 803
     links: [
       'http://www.afzhan.com'
     ]
-  }]
+  }  
+
+  ]
 
   team = team.concat(shuffle([
     {
